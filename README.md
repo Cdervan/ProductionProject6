@@ -13,6 +13,7 @@ University which served as my object-oriented programming class's final.
 # Documentation
 [JavaDoc](docs/allclasses-index.html)
 
+Struggling to get this to work with github pages
 # Diagrams
 ![Java class diagrams](docs/diagrams/javaClassDiagramsProductionProject.png)
 
