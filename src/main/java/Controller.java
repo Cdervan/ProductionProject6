@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.Date;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -74,8 +73,6 @@ public class Controller {
 
   public static final ObservableList<Product> productLine = FXCollections.observableArrayList();
 
-  ArrayList<ProductionRecord> productionLog = new ArrayList<>();
-
   final ObservableList<ProductionRecord> productionRun = FXCollections.observableArrayList();
 
   /**
@@ -88,7 +85,7 @@ public class Controller {
   void addProduct(ActionEvent event) throws SQLException {
 
     // insert added product into database
-    addtoproductDb();
+    addToProductDb();
     System.out.println("ADDING PRODUCT");
 
     // call loadProductList
@@ -170,10 +167,6 @@ public class Controller {
       prodLogTxt.appendText(pr.toString());
 
     }
-    /*for(ProductionRecord currentRecord : productionLog) {
-      prodLogTxt.appendText(currentRecord.toString());
-    }*/
-
     // populate the TextArea on the Production Log tab with the information from the productionLog,
     // replacing the productId with the product name, with one line for each product produced
   }
@@ -200,7 +193,7 @@ public class Controller {
   /**
    * Method that adds a user entered product to the PRODUCT database.
    */
-  public void addtoproductDb() {
+  public void addToProductDb() {
     connectDb();
     try {
 
@@ -255,52 +248,6 @@ public class Controller {
       showProdLog(productionRun);
     }
     disconnectDb();
-
-   /* int itemSelect = listProducts.getSelectionModel().getSelectedIndex();
-    Product product = productLine.get(itemSelect);
-    ProductionRecord pr = new ProductionRecord(product, itemSelect);
-
-    int prodNum = pr.getProductionNum();
-    String serNum = pr.getSerialNum();
-    Timestamp date = new Timestamp(pr.getProdDate().getTime());
-
-    // Loop through the productionRun, inserting productionRecord object information
-    // into the ProductionRecord database table.
-
-    try {
-      connectDb();
-
-      //String sqlpr = "SELECT * FROM PRODUCTIONRECORD";
-      //rs = stmt.executeQuery();
-      //stmt = conn.prepareStatement(sqlpr);
-
-      //Creates string with production records with insertable placeholder values
-      String insertSqlProdLog = "INSERT INTO
-      PRODUCTIONRECORD(PRODUCT_ID, SERIAL_NUM, DATE_PRODUCED) VALUES ( ?, ?, ?)";
-
-      //assigns query to prepared statement
-      pstmt = conn.prepareStatement(insertSqlProdLog);   //   <---- ISSUE HERE
-
-
-      *//*pstmt.setString(1, String.valueOf(prodNum));
-      pstmt.setString(2, serNum);
-      pstmt.setString(3, String.valueOf(date));*//*
-
-      pstmt.setString(1, String.valueOf(pr.getProductID()));
-      pstmt.setString(2, String.valueOf(pr.getSerialNum()));
-      pstmt.setString(3, String.valueOf(pr.getProdDate()));
-
-      pstmt.executeUpdate();
-
-      disconnectDb();
-
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }*/
-
-    //for loop to display products based on amount selected in combo box
-   /* for (int i = 0; i < pCount; i++)
-      prodLogTxt.appendText(pr.toString());*/
   }
 
   /**
@@ -356,13 +303,6 @@ public class Controller {
 
         // 3) call showProduction
         showProdLog(productionRun);
-
-        /*ProductionRecord pr = new ProductionRecord(rs.getInt("PRODUCTION_NUM"),
-        rs.getInt("PRODUCT_ID"), rs.getString("SERIAL_NUM"),rs.getDate("DATE_PRODUCED"));
-
-        productionLog.add(pr);
-
-        prodLogTxt.appendText(pr.toString());*/
       }
     } catch (SQLException e) {
       e.printStackTrace();
@@ -437,7 +377,7 @@ public class Controller {
   /**
    * Method to reverse the order of an Employee's password.
    */
-  public String reverseString(String id) {
+  public String reverseString(String id) {  // unused declaration warning
     if (id.isEmpty()) {
       return id;
     }

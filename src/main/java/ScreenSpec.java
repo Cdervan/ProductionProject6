@@ -8,16 +8,16 @@ public interface ScreenSpec {
   /**
    * Gets resolution.
    */
-  String getResolution();
+  String getResolution();  // unused declaration warning
 
   /**
    * Gets refresh rate.
    */
-  int getRefreshRate();
+  int getRefreshRate();  // unused declaration warning
 
   /**
    * Gets resolution.
    */
-  int getResponseTime();
+  int getResponseTime();  // unused declaration warning
 
 }

@@ -94,7 +94,7 @@ public class Product implements Item {
    *
    * @param type - ItemType of product
    */
-  public void setType(ItemType type) {
+  public void setType(ItemType type) { // unused declaration warning
     this.type = type;
   }
 

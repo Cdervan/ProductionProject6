@@ -94,7 +94,7 @@ public class ProductionRecord {
    *
    * @return - int production number
    */
-  public int getProductionNum() {
+  public int getProductionNum() {  // unused declaration warning
     return productionNumber;
   }
 
@@ -130,7 +130,7 @@ public class ProductionRecord {
    *
    * @param prodId - product id
    */
-  public void setProductId(int prodId) {
+  public void setProductId(int prodId) {  // unused declaration warning
     productId = prodId;
   }
 
@@ -139,7 +139,7 @@ public class ProductionRecord {
    *
    * @param serialNum - product serial number
    */
-  public void setSerialNum(String serialNum) {
+  public void setSerialNum(String serialNum) {  // unused declaration warning
     serialNumber = serialNum;
   }
 
@@ -148,7 +148,7 @@ public class ProductionRecord {
    *
    * @param prodDate - date product was produced
    */
-  public void setProdDate(Date prodDate) {
+  public void setProdDate(Date prodDate) {  // unused declaration warning
     dateProduced = prodDate;
   }
 

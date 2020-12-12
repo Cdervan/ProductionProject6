@@ -6,5 +6,5 @@
 public enum MonitorType {
 
   LCD,
-  LED
+  LED  // unused declaration warning
 }

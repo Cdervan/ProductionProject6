@@ -7,7 +7,7 @@
 public class MoviePlayer extends Product implements MultimediaControl {
 
   public final Screen screen;
-  public final MonitorType monitorType;
+  public final MonitorType monitorType;  // unused declaration
 
   /**
    * Class constructor that builds a moviePlayer object.

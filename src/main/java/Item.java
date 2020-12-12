@@ -8,30 +8,30 @@ public interface Item {
   /**
    * Gets product id.
    */
-  int getId();
+  int getId();  // unused declaration warning
 
   /**
    * Sets product name.
    *
    * @param name - product name
    */
-  void setName(String name);
+  void setName(String name);  // unused declaration warning
 
   /**
    * Gets product name.
    */
-  String getName();
+  String getName(); // unused declaration warning
 
   /**
    * Sets manufacturer name.
    *
    * @param manufacturer - manufacturer name
    */
-  void setManufacturer(String manufacturer);
+  void setManufacturer(String manufacturer); // unused declaration warning
 
   /**
    * Gets product name.
    */
-  String getManufacturer();
+  String getManufacturer(); // unused declaration warning
 
 }
