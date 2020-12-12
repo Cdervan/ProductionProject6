@@ -14,6 +14,7 @@ University which served as my object-oriented programming class's final.
 [JavaDoc]()
 
 # Diagrams
+![Java class diagrams]()
 My database in intellij is having some errors 
 and can't view the database, or the database diagrams
 
