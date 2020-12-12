@@ -8,7 +8,7 @@ This was an individual project that I worked on throughout my junior year at Flo
 University which served as my object-oriented programming class's final.
 
 # Demonstration
-![Quick gif demonstrating program](https://giphy.com/gifs/UF1hpwIrQnrmiBQx4J/html5)
+![Quick gif demonstrating program](docs/productionLogDemo.gif)
 
 # Documentation
 [JavaDoc]()
