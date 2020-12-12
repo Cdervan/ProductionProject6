@@ -8,15 +8,18 @@ This was an individual project that I worked on throughout my junior year at Flo
 University which served as my object-oriented programming class's final.
 
 # Demonstration
-![Quick gif demonstrating program] ()
+![Quick gif demonstrating program]()
 
 # Documentation
-[JavaDoc]()
+[JavaDoc](docs/index.html)
 
 # Diagrams
-![Java class diagrams]()
+![Java class diagrams](docs/diagrams/javaClassDiagramsProductionProject.png)
+
 My database in intellij is having some errors 
 and can't view the database, or the database diagrams
+
+![This is what displays](docs/diagrams/falseDatabaseDiagram.png)
 
 # Getting Started
 Download src files to local machine
@@ -30,8 +33,6 @@ Intellij IDEA Ultimate
 
 # Author
 Christopher Dervan
-
-# License
 
 # Acknowledgements
 [Professor's Website](https://sites.google.com/site/profvanselow/portfolio?authuser=0)
