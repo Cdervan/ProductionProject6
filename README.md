@@ -11,7 +11,7 @@ University which served as my object-oriented programming class's final.
 ![Quick gif demonstrating program]()
 
 # Documentation
-[JavaDoc]()
+[JavaDoc](docs/index-all.html)
 
 # Diagrams
 ![Java class diagrams](docs/diagrams/javaClassDiagramsProductionProject.png)
